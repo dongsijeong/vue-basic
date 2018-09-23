@@ -1,8 +1,9 @@
+//实例化Vue对象
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'Shaun',
-        job: 'Ninja'
+        name: 'Shiqing Dong',
+        job: 'Programmer'
     },
     methods: {
         greet: function(time){
