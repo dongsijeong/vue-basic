@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VueJS Tutorials</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>Events</h1>
+            <!-- 点击事件将只会触发一次 -->
+            <button v-on:click.once="add(1)">Add a Year</button>
+            <button v-on:click="subtract(1)">Subtract a Year</button>
+            <button v-on:dblclick="add(10)">Add 10 Years</button>
+            <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
+            <p>My age is {{age}}</p>
+            <!-- 添加事件监听器时使用事件捕获模式 -->
+            <!-- 即元素自身触发的事件先在此处理，然后才交由内部元素进行处理 -->
+            <div id="canvas" v-on:mousemove.capture="updateXY">{{ x }} , {{ y }}</div>
+            <p><a v-on:click.prevent="click" href="http://www.thenetninja.co.uk">The Net Shiqing Dong</a></p>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>
