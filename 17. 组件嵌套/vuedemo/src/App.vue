@@ -1,21 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <div class="app">
+      <h1>{{ msg }}</h1>
+    </div>
+    <users/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Users from './components/Users'; //局部注册组件
 
 export default {
   name: 'App',
+  data() {
+    return {
+      msg: '这是我的第一个VUE Cli Demo'
+    }
+  },
+  //component的名字不要和html的dom 标签冲突
   components: {
-    HelloWorld
+    "users": Users
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+  h1 {
+    color:green;
+  }
 </style>
