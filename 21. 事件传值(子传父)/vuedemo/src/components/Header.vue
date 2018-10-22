@@ -18,7 +18,7 @@ export default {
     },
     methods: {
       changeTitle: function(){
-        this.title = 'Vue Shiqing Dong';
+        this.$emit('changeTitle', 'Vue Shiqing Dong(子传父)');
       }
     }
 }

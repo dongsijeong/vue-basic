@@ -1,6 +1,6 @@
 <template>
     <div>
-        <app-header v-bind:title="title"></app-header>
+        <app-header v-bind:title="title" v-on:changeTitle="updateTitle($event)"></app-header>
         <app-users :users="users"></app-users>
         <ul>
           <li v-for="user in users" :key="user.name">{{ user.name }}</li>
@@ -33,6 +33,11 @@ export default {
             ],
             title: 'Vue Wizards'
         }
+    },
+    methods: {
+      updateTitle: function(updatedTitle){
+        this.title = updatedTitle;
+      }
     }
 }
 </script>
