@@ -16,6 +16,7 @@ export default {
 footer{
     background: #222;
     padding: 6px;
+    margin-top: 400px;
 }
 p{
         color: lightgreen;
