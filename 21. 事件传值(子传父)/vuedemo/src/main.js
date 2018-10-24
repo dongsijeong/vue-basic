@@ -9,6 +9,8 @@ Vue.config.productionTip = false
 //全局注册组件
 // Vue.component("users", Users);
 
+Vue.prototype.$bus = new Vue();
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

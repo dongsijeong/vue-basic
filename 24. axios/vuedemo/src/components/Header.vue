@@ -19,7 +19,6 @@ export default {
     methods: {
       changeTitle: function(){
         this.$emit('changeTitle', 'Vue Shiqing Dong(子传父)');
-        this.$bus.$emit('changeTitleByBus', 'Vue Shiqing Dong(子传父ByBus)');
       }
     }
 }

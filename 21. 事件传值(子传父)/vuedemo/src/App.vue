@@ -34,6 +34,11 @@ export default {
             title: 'Vue Wizards'
         }
     },
+    mounted() {
+        this.$bus.$on('changeTitleByBus', (value)=>{
+            alert("通过prototype的bus传值： " + value);
+        });
+    },
     methods: {
       updateTitle: function(updatedTitle){
         this.title = updatedTitle;
