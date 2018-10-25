@@ -19,6 +19,10 @@
             <!-- 即元素自身触发的事件先在此处理，然后才交由内部元素进行处理 -->
             <div id="canvas" v-on:mousemove.capture="updateXY">{{ x }} , {{ y }}</div>
             <p><a v-on:click.prevent="click" href="http://www.thenetninja.co.uk">The Net Shiqing Dong</a></p>
+            <!-- stop -->
+            <div class="clickfather" @click="father">
+                <div class="clickchild" @click.stop="child"></div>
+            </div>
         </div>
     </body>
 

@@ -37,14 +37,10 @@
                 obj3
                 <div id="obj4" v-on:click="doc">
                 obj4
-                <!--点击obj4的时候，弹出的顺序为：obj1、obj2、obj4、obj3；
-                由于1，2有修饰符，故而先触发事件，然后就是4本身触发，最后冒泡事件。
-                -->
             </div>
             </div>
         </div>
     </div>
-
 </div>
 <script type="text/javascript">
     var content = new Vue({
@@ -61,4 +57,7 @@
     })
 </script>
 </body>
+<!--点击obj4的时候，弹出的顺序为：obj1、obj2、obj4、obj3；
+                由于1，2有修饰符，故而先触发事件，然后就是4本身触发，最后冒泡事件。
+                -->
 </html>

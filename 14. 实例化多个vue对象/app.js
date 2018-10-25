@@ -27,4 +27,4 @@ var two = new Vue({
     }
 });
 
-two.title = 'Changed from outside';
+// two.title = 'Changed from outside';

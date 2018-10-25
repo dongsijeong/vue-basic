@@ -18,6 +18,12 @@ new Vue({
         },
         click: function(){
             alert('you clicked me');
+        },
+        father() {
+            alert("father click");
+        },
+        child() {
+            alert("child click");
         }
     }
 });

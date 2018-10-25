@@ -4,3 +4,17 @@
     text-align: center;
     border: 1px solid #333;
 }
+.clickfather {
+    background-color: goldenrod;
+    width: 300px;
+    padding: 200px 20px;
+    text-align: center;
+    border: 1px solid #333;
+}
+.clickchild {
+    background-color: red;
+    width: 150px;
+    padding: 200px 20px;
+    text-align: center;
+    border: 1px solid #333;
+}
