@@ -4,7 +4,8 @@ new Vue({
         name: 'Uzi',
         job: 'Programmer',
         website: 'https://www.baidu.com/',
-        websiteTag: '<a href="https://www.baidu.com/">Website</a>'
+        websiteTag: '<a href="https://www.baidu.com/">Website</a>',
+        colorCheck: false
     },
     methods: {
         greet: function(time){

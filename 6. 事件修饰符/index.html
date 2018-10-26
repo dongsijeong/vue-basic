@@ -23,6 +23,7 @@
             <div class="clickfather" @click="father">
                 <div class="clickchild" @click.stop="child"></div>
             </div>
+            <div id="canvas" v-on:contextmenu.prevent="contextmenu"></div>
         </div>
     </body>
 

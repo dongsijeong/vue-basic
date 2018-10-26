@@ -8,9 +8,11 @@
     <body>
         <div id="vue-app">
             <h1>Data Binding</h1>
-            <p><a v-bind:href="website">Website</a></p>
+            <p><a v-bind:href="website" :style="colorCheck == true ? 'color:#FF0000;' : 'color: green;'">Website</a></p>
             <p v-html="websiteTag"></p>
             <p><input type="text" v-bind:value="name" /></p>
+            <p><input type="text" :value="name" /></p>
+
         </div>
     </body>
 

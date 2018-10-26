@@ -24,6 +24,10 @@ new Vue({
         },
         child() {
             alert("child click");
+        },
+        contextmenu(event) {
+            console.log(event);
+            ///event.preventDefault();
         }
     }
 });
