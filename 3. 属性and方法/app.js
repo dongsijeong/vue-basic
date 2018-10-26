@@ -2,7 +2,7 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'Shiqing Dong',
+        name: 'Uzi',
         job: 'Programmer'
     },
     methods: {

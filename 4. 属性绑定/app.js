@@ -1,10 +1,10 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'Shiqing Dong',
+        name: 'Uzi',
         job: 'Programmer',
         website: 'https://www.baidu.com/',
-        websiteTag: '<a href="https://www.baidu.com/">The Net Shiqing Dong Website</a>'
+        websiteTag: '<a href="https://www.baidu.com/">Website</a>'
     },
     methods: {
         greet: function(time){
