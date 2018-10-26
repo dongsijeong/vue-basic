@@ -18,9 +18,11 @@ import axios from 'axios'
 import Users from './Users'
 import Header from './Header'
 import Footer from './Footer'
+import homeService from '../mixin/homeService.js'
 
 export default {
   name: 'home',
+  mixins: [homeService],
   components:{
     "app-users":Users,
     "app-header":Header,
@@ -49,6 +51,10 @@ export default {
       //console.log(response);
       this.users = response.data;
     });
+    //this.getUsers();
+    // this.getUsers2().then(response => {
+    //   this.users = this.mxn_usersData;
+    // });
   }
 }
 </script>
