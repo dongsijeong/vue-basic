@@ -13,6 +13,11 @@ export default {
             test: 'hello world'
         }
     },
+    watch: {
+        test: function() {
+            alert("test changed");
+        }
+    },
     beforeCreate: function(){
         console.log(this);
         this.showData('创建vue实例前',this);
