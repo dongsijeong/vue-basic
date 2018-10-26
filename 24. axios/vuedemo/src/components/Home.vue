@@ -18,11 +18,11 @@ import axios from 'axios'
 import Users from './Users'
 import Header from './Header'
 import Footer from './Footer'
-import homeService from '../mixin/homeService.js'
+import userService from '../mixin/userService.js'
 
 export default {
   name: 'home',
-  mixins: [homeService],
+  mixins: [userService],
   components:{
     "app-users":Users,
     "app-header":Header,
